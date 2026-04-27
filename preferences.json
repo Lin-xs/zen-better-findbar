@@ -85,6 +85,20 @@
 		]
 	},
 	{
+		"property": "theme.better_find_bar.position_delta_x",
+		"label": "Position delta X (px)",
+		"type": "string",
+		"defaultValue": "0",
+		"placeholder": "0"
+	},
+	{
+		"property": "theme.better_find_bar.position_delta_y",
+		"label": "Position delta Y (px)",
+		"type": "string",
+		"defaultValue": "0",
+		"placeholder": "0"
+	},
+	{
 		"property": "theme.better_find_bar.textbox_width",
 		"label": "Textbox width (px)",
 		"type": "string",

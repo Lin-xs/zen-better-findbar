@@ -1,0 +1,20 @@
+{
+    "id": "zen-better-findbar",
+    "homepage": "https://github.com/Lin-xs/zen-better-findbar",
+    "author": "Lin-xs",
+    "name": "Better Find Bar",
+    "description": "Improves the find bar with a floating, theme-matched layout and configurable colors, position, offsets, width, animations, and controls.",
+    "version": "yuanq_1.5.2",
+    "style": "chrome.css",
+    "preferences": "preferences.json",
+    "readme": "readme.md",
+    "tags": [
+        "chrome",
+        "findbar",
+        "search",
+        "zen"
+    ],
+    "fork": [
+        "zen"
+    ]
+}

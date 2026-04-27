@@ -9,6 +9,8 @@
 	--better-findbar-background-color: var(--zen-colors-primary);
 	--better-findbar-text-color: var(--toolbar-color);
 	--better-findbar-box-shadow: 0 5px 10px #00000080;
+	--better-findbar-position-delta-x: calc(var(--theme-better_find_bar-position_delta_x, 0) * 1px);
+	--better-findbar-position-delta-y: calc(var(--theme-better_find_bar-position_delta_y, 0) * 1px);
 }
 
 /* Custom background */
@@ -48,7 +50,8 @@ findbar {
 	bottom: var(--better-findbar-position-bottom);
 	left: var(--better-findbar-position-left);
 	right: var(--better-findbar-position-right);
-	transform: translateX(var(--better-findbar-transform-translateX)) translateY(0);
+	transform: translateX(var(--better-findbar-transform-translateX))
+		translate(var(--better-findbar-position-delta-x), var(--better-findbar-position-delta-y));
 
 	overflow: unset !important;
 	box-shadow: var(--better-findbar-box-shadow);
@@ -111,11 +114,15 @@ findbar {
 	}
 
 	&[hidden] {
-		transform: translateX(var(--better-findbar-transform-translateX)) translateY(var(--better-findbar-transform-translateY));
+		transform: translateX(var(--better-findbar-transform-translateX))
+			translate(var(--better-findbar-position-delta-x), var(--better-findbar-position-delta-y))
+			translateY(var(--better-findbar-transform-translateY));
 	}
 
 	@starting-style {
-		transform: translateX(var(--better-findbar-transform-translateX)) translateY(var(--better-findbar-transform-translateY));
+		transform: translateX(var(--better-findbar-transform-translateX))
+			translate(var(--better-findbar-position-delta-x), var(--better-findbar-position-delta-y))
+			translateY(var(--better-findbar-transform-translateY));
 	}
 }
 
